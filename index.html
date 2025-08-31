@@ -10,29 +10,30 @@
   <link rel="stylesheet" href="style.css">
 
 <body>
-   <div class="nav">
-    <div class="brand">
-      <div class="logo">kj</div>
-      <div>
-        <div style="font-weight:800;color:#ecfeff">Krishna Jaiswal</div>
-        <div style="font-size:12px;color:var(--muted);margin-top:2px">Video Editor </div>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">KJ</div>
+        <div>
+          <div style="font-weight:800;color:#ecfeff">Krishna Jaiswal</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Video Editor / Graphic Designer</div>
+        </div>
       </div>
+
+      <!-- Hamburger button (mobile only) -->
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <nav>
+        <ul id="menuList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="cta">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Hamburger button (mobile only) -->
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-    <nav>
-      <ul id="menuList">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="cta">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
- 
   <main>
     <section id="home" class="hero">
       <div class="intro fade-in delay-1">
@@ -49,8 +50,11 @@
 
       <div class="hero-right fade-in delay-2">
         <div class="preview">
-          <!-- Replace FILE_ID_PREVIEW with your Google Drive file id (see notes below) -->
-          <video src="WhatsApp Video 2025-08-31 at 14.42.53_b134e3ba.mp4"autoplay muted loop playinline ></video>
+          <video autoplay muted loop playsinline>
+            <source src="teaser.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
         </div>
         <div style="display:flex;width:100%;gap:8px;justify-content:center">
           <a href="#work" class="pill">See Work</a>
@@ -61,16 +65,13 @@
 
     <section id="work" class="work">
       <h2 style="color:#eaffff;margin:0 0 12px">Selected Work</h2>
-      <p style="color:var(--muted);margin:0 0 18px">
-        Hover / drag to tilt cards. Click play to preview each video.
-        Replace FILE_ID_x with your Google Drive file IDs (instructions below).
-      </p>
-
       <div class="grid">
+        
         <!-- CARD 1 -->
         <div class="card">
           <div class="card-inner">
-            <iframe src="https://drive.google.com/file/d/1cZ62BnvdXPAWcgCn1NSn9bkdgPP9OJ7t/preview" allowfullscreen></iframe>
+            <iframe src="https://drive.google.com/file/d/1cZ62BnvdXPAWcgCn1NSn9bkdgPP9OJ7t/preview"
+              allowfullscreen></iframe>
             <div class="meta">
               <h3 class="title">Project Title 1</h3>
               <p class="desc">Short description — platform, style, role.</p>
@@ -81,7 +82,8 @@
         <!-- CARD 2 -->
         <div class="card">
           <div class="card-inner">
-            <iframe src="https://drive.google.com/file/d/1Hyiq9Q1Otr4ExvOsXobtw49DBZQPen3g/preview"allowfullscreen></iframe>
+            <iframe src="https://drive.google.com/file/d/1Hyiq9Q1Otr4ExvOsXobtw49DBZQPen3g/preview"
+              allowfullscreen></iframe>
             <div class="meta">
               <h3 class="title">Project Title 2</h3>
               <p class="desc">Short description — platform, style, role.</p>
@@ -92,7 +94,8 @@
         <!-- CARD 3 -->
         <div class="card">
           <div class="card-inner">
-            <iframe src="https://drive.google.com/file/d/1lehblXiLFxmUNMP0KsxLj60S4fRgKEKk/preview" allowfullscreen></iframe>
+            <iframe src="https://drive.google.com/file/d/1lehblXiLFxmUNMP0KsxLj60S4fRgKEKk/preview"
+              allowfullscreen></iframe>
             <div class="meta">
               <h3 class="title">Project Title 3</h3>
               <p class="desc">Short description — platform, style, role.</p>
@@ -103,7 +106,8 @@
         <!-- CARD 4 -->
         <div class="card">
           <div class="card-inner">
-            <iframe src="https://drive.google.com/file/d/1PwWNX6FkDKYlhELLwbQ4onanTgjoZ_ur/preview" allowfullscreen></iframe>
+            <iframe src="https://drive.google.com/file/d/1PwWNX6FkDKYlhELLwbQ4onanTgjoZ_ur/preview"
+              allowfullscreen></iframe>
             <div class="meta">
               <h3 class="title">Project Title 4</h3>
               <p class="desc">Short description — platform, style, role.</p>
@@ -114,7 +118,8 @@
         <!-- CARD 5 -->
         <div class="card">
           <div class="card-inner">
-            <iframe src="https://drive.google.com/file/d/1It9WqgVDAuQMw6c7jZziSZ5VNylvqxkT/preview" allowfullscreen></iframe>
+            <iframe src="https://drive.google.com/file/d/1It9WqgVDAuQMw6c7jZziSZ5VNylvqxkT/preview"
+              allowfullscreen></iframe>
             <div class="meta">
               <h3 class="title">Project Title 5</h3>
               <p class="desc">Short description — platform, style, role.</p>
@@ -125,7 +130,8 @@
         <!-- CARD 6 -->
         <div class="card">
           <div class="card-inner">
-            <iframe src="https://drive.google.com/file/d/1uQTUbA-06VBFtuAuND6gSpUQ0t0dZiIb/preview" allowfullscreen ></iframe>
+            <iframe src="https://drive.google.com/file/d/1uQTUbA-06VBFtuAuND6gSpUQ0t0dZiIb/preview"
+              allowfullscreen></iframe>
             <div class="meta">
               <h3 class="title">Project Title 6</h3>
               <p class="desc">Short description — platform, style, role.</p>
@@ -136,8 +142,7 @@
     </section>
 
 
-    <section id="about" style="max-width:900px;margin:20px auto;padding:6px 20px 40px;color:var(--muted)">
-      <h2 style="color:#eaffff">About</h2>
+    <section id="about">About</h2>
       <p>I edit using CapCut (PC), VN, Premiere Pro and design quick motion assets in Canva. I focus on fast
         turnarounds, polished color grading and platform-optimised edits for better reach.</p>
     </section>
@@ -170,17 +175,17 @@
   </main>
 
   <footer>
-    <div style="max-width:1000px;margin:0 auto;padding:8px 20px">© <span id="year"></span> krishna jaiswal — Video Editing •
+    <div style="max-width:1000px;margin:0 auto;padding:8px 20px">© <span id="year"></span> krishna jaiswal — Video
+      Editing •
       Motion Design</div>
   </footer>
 
   <a class="float-contact" href="#contact">Let's work</a>
-  
+
   <script src="index.js">
 
   </script>
 
 </body>
-
 
 </html>
