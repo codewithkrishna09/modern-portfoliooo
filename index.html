@@ -10,26 +10,29 @@
   <link rel="stylesheet" href="style.css">
 
 <body>
-  <header>
-    <div class="nav">
-      <div class="brand">
-        <div class="logo">kj</div>
-        <div>
-          <div style="font-weight:800;color:#ecfeff">Krishna Jaiswal</div>
-          <div style="font-size:12px;color:var(--muted);margin-top:2px">Video Editor • Motion Designer</div>
-        </div>
+   <div class="nav">
+    <div class="brand">
+      <div class="logo">kj</div>
+      <div>
+        <div style="font-weight:800;color:#ecfeff">Krishna Jaiswal</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:2px">Video Editor </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact" class="cta">Contact</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
 
+    <!-- Hamburger button (mobile only) -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav>
+      <ul id="menuList">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+ 
   <main>
     <section id="home" class="hero">
       <div class="intro fade-in delay-1">
@@ -47,7 +50,7 @@
       <div class="hero-right fade-in delay-2">
         <div class="preview">
           <!-- Replace FILE_ID_PREVIEW with your Google Drive file id (see notes below) -->
-          <video src="WhatsApp Video 2025-08-31 at 14.42.53_b134e3ba.mp4"autoplay loop ></video>
+          <video src="WhatsApp Video 2025-08-31 at 14.42.53_b134e3ba.mp4"autoplay muted loop playinline ></video>
         </div>
         <div style="display:flex;width:100%;gap:8px;justify-content:center">
           <a href="#work" class="pill">See Work</a>
@@ -178,5 +181,6 @@
   </script>
 
 </body>
+
 
 </html>
