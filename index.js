@@ -60,16 +60,10 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
 // replace year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// NOTES for Google Drive embedding:
-// If your share link looks like: https://drive.google.com/file/d/FILE_ID/view?usp=sharing
-// use the FILE_ID where this HTML has FILE_ID_1 ... FILE_ID_6 and FILE_ID_PREVIEW
-// final video URL format used in <video> tag:
-// https://drive.google.com/uc?export=download&id=FILE_ID_HERE
 
-// IMPORTANT: Google Drive sometimes blocks direct serving for some accounts. If a video doesn't play,
-// 1) make sure the file is public (Anyone with the link can view), 2) try converting to MP4 and re-uploading.
-
-// Accessibility: make cards focusable for keyboard users
 document
   .querySelectorAll(".card")
   .forEach((c) => c.setAttribute("tabindex", "0"));
+  function toggleMenu() {
+  document.getElementById("menuList").classList.toggle("show");
+}
